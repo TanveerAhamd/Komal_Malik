@@ -1,0 +1,92 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+h1{
+    text-align: center;
+    padding-top: 30px;
+}
+
+ .container{
+    margin: 50px auto;
+    /* border: 1px solid; */
+    width: 60%;
+     height: 80vh; 
+    background-color: rgb(240, 164, 156);
+} 
+.box {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    /* background-color: orchid; */
+    background-image: url(./Images/IMG-20241126-WA0016.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    animation: colorchange 10s linear infinite;
+}
+
+@keyframes colorchange {
+    0% {
+        background-color:rgb(155, 29, 15);
+        top: 0px;
+        left: 0px;
+    }
+
+    25% {
+        background-color: yellow;
+         top: 0px;
+        left: 480px; 
+         transform: rotate(360deg);
+         background-image: url(./Images/IMG-20241126-WA0016.jpg);
+         background-size: cover;
+         background-position: center;
+         background-repeat: no-repeat;
+        /* width: 200px;
+        height:200px ; */
+        /* border-radius: 100%;  */
+    }
+
+    50% {
+        background-color: green;
+        top: 250px;
+        left: 480px;
+        transform: rotateX(360deg);
+        background-image: url(./Images/IMG-20241222-WA0029.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        /* width: 200px;
+        height:200px ; */
+        /* border-radius: 100%; */
+    }
+
+    75% {
+        background-color: palevioletred;
+        top: 250px;
+        left:0px;
+        transform: rotateY(-360deg);
+        background-image: url(./Images/IMG-20241222-WA0029.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        /* width: 200px;
+        height:200px ; */
+        /* border-radius: 100%; */
+    }
+
+    100% {
+        background-color: rgb(148, 44, 61);
+        top: 0px;
+        left: 0px;
+        transform: rotateY(360deg);
+        background-image: url(./Images/IMG-20241127-WA0019.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 200px;
+        height:200px ;
+        /* border-radius: 100%; */
+    }
+}
